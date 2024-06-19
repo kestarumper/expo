@@ -151,7 +151,7 @@ export function createControlledEnvironment() {
 
     const envInfo = get(projectRoot, options);
 
-    if (!options.force) {
+    if (!options.silent) {
       const keys = Object.keys(envInfo.env);
       if (keys.length) {
         console.log(
